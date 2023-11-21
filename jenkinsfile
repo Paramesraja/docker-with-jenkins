@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh 'docker build -t paramesr11/jenkins_docker_sample'
+                sh 'docker build -t paramesr11/jenkins_docker_sample .'
             }
         }
         stage('Login'){
